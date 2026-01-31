@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>Shared you experienced with us</legend>
+
+        <form>
+            <p>
+                Full Name : <input type="text" name="fullname" value="Preap Sovath">
+            </p>
+
+            <p>
+                Gender :
+                <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+                <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+            </p>
+
+            <p>
+                Phone Number : +855 <input type="text" name="phone" placeholder="12 345 678">
+                <mark>Format : 12 345 678</mark>
+            </p>
+
+            <p>
+                Email : <input type="email" name="email" placeholder="someone@gmail.com">
+            </p>
+
+            <p>
+                Where do you find Us ?
+            </p>
+            <p>
+                <input type="checkbox" id="facebook"> <label for="facebook">Facebook</label>
+                <input type="checkbox" id="friend"> <label for="friend">Friend or Relative</label>
+                <input type="checkbox" id="other"> <label for="other">Other</label>
+            </p>
+
+            <p>
+                How you so satisfied about Sunris Hospital ?
+            </p>
+
+            <p>
+                <input type="radio" name="satisfaction" id="bad">
+                <label for="bad">Bad Experienced</label>
+                <meter min="0" max="100" low="30" high="80" optimum="100" value="20"></meter>
+            </p>
+
+            <p>
+                <input type="radio" name="satisfaction" id="average">
+                <label for="average">Average</label>
+                <meter min="0" max="100" low="30" high="80" optimum="100" value="50"></meter>
+            </p>
+
+            <p>
+                <input type="radio" name="satisfaction" id="satisfied">
+                <label for="satisfied">Very Satisfied</label>
+                <meter min="0" max="100" low="30" high="80" optimum="90" value="95"></meter>
+            </p>
+
+            <p>Give us some feedback</p>
+            <textarea name="feedback" rows="10" cols="50">I love Sunrise Hospital</textarea>
+
+            <br><br>
+
+            <button type="submit">Submit Experienced</button>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>

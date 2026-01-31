@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Form</title>
+</head>
+<body>
+
+    <center>
+        <p>
+            <a href="Home.html">Home</a> | 
+            <a href="AppointmentPage.html">Appointment</a> | 
+            <a href="LocationPage.html">Location</a>
+        </p>
+        
+        <hr>
+        <h1>Appointment Form</h1>
+    </center>
+
+    <details open>
+        <summary>Please read this</summary>
+        <p>
+            To make an appointment at <b>Sunrise Care Hospital</b>, please <u>fill out</u> the form below with <u>accurate information</u>. 
+            Enter your <mark>full name</mark>, <mark>contact number</mark>, and <mark>email address</mark> so our staff can reach you easily.
+        </p>
+        <p>
+            Select the <b>department</b> you wish to visit and choose your <u>preferred appointment date</u> and <u>time</u>. 
+            Appointments are available from <mark>8:00 AM</mark><sub>(morning)</sub> to <mark>5:00 PM</mark><sup>(evening)</sup>, <b>Monday</b> to <b>Friday</b>.
+        </p>
+        <p>
+            After <u>submitting the form</u>, our team will review your request and contact you within <mark>24 hours</mark> to <b>confirm</b> your appointment. 
+            Please note that appointment availability depends on the <b>doctor's schedule</b>.
+        </p>
+        <p>
+            For <b>urgent cases</b>, we <u>strongly recommend</u> contacting the hospital <b>directly</b> by phone instead of using the appointment form<sub>(online)</sub>.
+        </p>
+    </details>
+
+    <br>
+
+    <fieldset>
+        <legend>Appointment Form</legend>
+        <form>
+            <p>
+                Full Name : <input type="text" name="firstname" value="Chan"> | <input type="text" name="lastname" value="Mony">
+            </p>
+
+            <p>
+                Is your first time visit : 
+                <input type="radio" name="first_visit" id="yes"> <label for="yes">Yes</label>
+                <input type="radio" name="first_visit" id="no"> <label for="no">No</label>
+            </p>
+
+            <p>
+                Email : <input type="email" name="email" placeholder="someone@gmail.com">
+            </p>
+
+            <p>
+                Phone Number : <input type="text" name="phone" value="12 123 123"> 
+                <mark>Format : 12 122 122</mark>
+            </p>
+
+            <p>
+                Date of Appointment : <input type="datetime-local" name="appointment_date">
+            </p>
+
+            <p>
+                What time for the appointment ? <input type="time" name="appointment_time">
+            </p>
+
+            <p>
+                Please select the week if you are unable to attend: <input type="week" name="unavailable_week">
+            </p>
+
+            <p>
+                Do do like our service ?
+            </p>
+            <p>
+                <input type="range" name="service_rating" min="0" max="100" value="10">
+            </p>
+
+            <p>
+                <button type="reset">Reset</button>
+                <button type="submit">submit</button>
+            </p>
+        </form>
+    </fieldset>
+
+</body>
+</html>
